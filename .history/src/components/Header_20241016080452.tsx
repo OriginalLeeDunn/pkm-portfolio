@@ -3,7 +3,7 @@ import { Button } from '@/components/home-page/ui/button'
 
 export default function Header() {
   return (
-    <header className="w-full py-3 px-20 bg-background items-center">
+    <header className="w-full py-6 px-125 bg-background">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">
           Original Lee Dunn
