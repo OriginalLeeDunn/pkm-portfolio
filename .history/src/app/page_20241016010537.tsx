@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
       
-      <header className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <header className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
 
       <Header/>
 
@@ -20,7 +20,7 @@ export default function Home() {
 
       <HomePageComponent/>
       
-      <footer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
       
       
 
