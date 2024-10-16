@@ -55,15 +55,15 @@ export function HomePageComponent() {
             <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 mt-16 items-start">
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Create Projects</h3>
-                <p className="text-sm text-gray-500">Easily create and manage my projects in one place.</p>
+                <p className="text-sm text-gray-500">Easily create and manage your projects in one place.</p>
               </div>
               <div className="grid gap-1">
                 <h3 className="text-lg font-bold">Track Time</h3>
-                <p className="text-sm text-gray-500">Log my hours and monitor productivity with our time tracking feature.</p>
+                <p className="text-sm text-gray-500">Log your hours and monitor productivity with our time tracking feature.</p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Showcase My Work</h3>
-                <p className="text-sm text-gray-500">Build my portfolio and share my achievements with the world.</p>
+                <h3 className="text-lg font-bold">Showcase Your Work</h3>
+                <p className="text-sm text-gray-500">Build your portfolio and share your achievements with the world.</p>
               </div>
             </div>
           </div>
@@ -76,37 +76,37 @@ export function HomePageComponent() {
                 <CardHeader>
                   <CardTitle>User Authentication</CardTitle>
                 </CardHeader>
-                <CardContent>Secure login and registration system to protect my data.</CardContent>
+                <CardContent>Secure login and registration system to protect your data.</CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <CardTitle>Project Management</CardTitle>
                 </CardHeader>
-                <CardContent>Organize and track my projects with ease.</CardContent>
+                <CardContent>Organize and track your projects with ease.</CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <CardTitle>Blog Integration</CardTitle>
                 </CardHeader>
-                <CardContent>Share my thoughts and insights with an integrated blogging platform.</CardContent>
+                <CardContent>Share your thoughts and insights with an integrated blogging platform.</CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <CardTitle>Time Tracking</CardTitle>
                 </CardHeader>
-                <CardContent>Monitor my productivity with built-in time tracking tools.</CardContent>
+                <CardContent>Monitor your productivity with built-in time tracking tools.</CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <CardTitle>Interactive Dashboard</CardTitle>
                 </CardHeader>
-                <CardContent>Visualize my progress with charts and statistics.</CardContent>
+                <CardContent>Visualize your progress with charts and statistics.</CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <CardTitle>LLM Query Interface</CardTitle>
                 </CardHeader>
-                <CardContent>Interact with my data using natural language queries.</CardContent>
+                <CardContent>Interact with your data using natural language queries.</CardContent>
               </Card>
             </div>
           </div>
@@ -117,7 +117,7 @@ export function HomePageComponent() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ready to Get Started?</h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Join now and take control of my personal knowledge management and portfolio.
+                  Join now and take control of your personal knowledge management and portfolio.
                 </p>
               </div>
               <Button className="w-[200px]">Explore Dashboard</Button>
@@ -133,21 +133,21 @@ export function HomePageComponent() {
                   <CardTitle>Maximizing Productivity with PKM</CardTitle>
                   <CardDescription>Posted on June 1, 2023</CardDescription>
                 </CardHeader>
-                <CardContent>Learn how to boost my productivity using Personal Knowledge Management techniques.</CardContent>
+                <CardContent>Learn how to boost your productivity using Personal Knowledge Management techniques.</CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <CardTitle>Building an Effective Digital Portfolio</CardTitle>
                   <CardDescription>Posted on May 15, 2023</CardDescription>
                 </CardHeader>
-                <CardContent>Tips and tricks for creating a standout digital portfolio to showcase my work.</CardContent>
+                <CardContent>Tips and tricks for creating a standout digital portfolio to showcase your work.</CardContent>
               </Card>
               <Card>
                 <CardHeader>
                   <CardTitle>The Power of Time Tracking</CardTitle>
                   <CardDescription>Posted on May 1, 2023</CardDescription>
                 </CardHeader>
-                <CardContent>Discover how time tracking can transform my work habits and improve efficiency.</CardContent>
+                <CardContent>Discover how time tracking can transform your work habits and improve efficiency.</CardContent>
               </Card>
             </div>
           </div>
@@ -163,7 +163,7 @@ export function HomePageComponent() {
               </div>
               <div className="w-full max-w-sm space-y-2">
                 <form className="flex space-x-2">
-                  <Input className="max-w-lg flex-1" placeholder="Enter my email" type="email" />
+                  <Input className="max-w-lg flex-1" placeholder="Enter your email" type="email" />
                   <Button type="submit">Subscribe</Button>
                 </form>
                 <p className="text-xs text-gray-500">
