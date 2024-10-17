@@ -51,8 +51,8 @@ function FloatingText({ position, text }) {
 
 function ParticleField() {
   const particlesRef = useRef()
-  const particleCount = 300
-  const particleSpeed = 0.01
+  const particleCount = 1000
+  const particleSpeed = 0.02
 
   const [positions, velocities] = useMemo(() => {
     const positions = new Float32Array(particleCount * 3)
@@ -126,15 +126,14 @@ export default function TechScene() {
         <ambientLight intensity={10} />
         <pointLight position={[10, 10, 10]} />
         <Suspense fallback={null}>
-          <Cog position={[-3.3, 0, 0]} rotation={[0, 0, 0]} scale={1} speed={0.01} color="#88c0d0" />
-          <Cog position={[3.3, 0, 0]} rotation={[0, Math.PI / 4, 0]} scale={0.8} speed={-0.015} color="#81a1c1" />
-          <Cog position={[0, 2.5, 0]} rotation={[Math.PI / 4, 0, 0]} scale={1.2} speed={0.008} color="#5e81ac" />
+          <Cog position={[-2, 0, 0]} rotation={[0, 0, 0]} scale={1} speed={0.01} color="#88c0d0" />
+          <Cog position={[-2, 0, 0]} rotation={[0, Math.PI / 4, 0]} scale={0.8} speed={-0.015} color="#81a1c1" />
+          <Cog position={[0, 2, 0]} rotation={[Math.PI / 4, 0, 0]} scale={1.2} speed={0.008} color="#5e81ac" />
           <Cog position={[0, -2, 0]} rotation={[0, 0, 0]} scale={0.5} speed={0.02} color="#ebcb8b" />
         </Suspense>
         <FloatingText position={[-2, -2, 0]} text="Innovate" />
         <FloatingText position={[2, -2, 0]} text="Create" />
-        <FloatingText position={[0, 1.3, 0]} text="Develop" />
-        <FloatingText position={[0, -1.2, 0]} text="Share" />
+        <FloatingText position={[0, 2.5, 0]} text="Develop" />
         <ParticleField />
         <OrbitControls enableZoom={false} />
       </Canvas>

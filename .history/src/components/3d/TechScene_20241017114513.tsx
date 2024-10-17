@@ -52,7 +52,7 @@ function FloatingText({ position, text }) {
 function ParticleField() {
   const particlesRef = useRef()
   const particleCount = 300
-  const particleSpeed = 0.01
+  const particleSpeed = 0.02
 
   const [positions, velocities] = useMemo(() => {
     const positions = new Float32Array(particleCount * 3)

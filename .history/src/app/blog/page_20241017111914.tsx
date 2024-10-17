@@ -12,9 +12,6 @@ export default function BlogPage() {
   return (
     <div className="container mx-auto py-12">
       <h1 className="text-4xl font-bold mb-8">Blog</h1>
-      <Button>
-                <Link href={'/blog/'}>Create</Link>
-              </Button>
       <div className="space-y-6">
         {posts.map((post) => (
           <Card key={post.id}>
@@ -28,6 +25,9 @@ export default function BlogPage() {
             <CardFooter>
               <Button asChild>
                 <Link href={`/blog/${post.id}`}>Read More</Link>
+              </Button>
+              <Button>
+                <Link href={'/blog/'}>Create</Link>
               </Button>
             </CardFooter>
           </Card>

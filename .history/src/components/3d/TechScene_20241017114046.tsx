@@ -52,7 +52,7 @@ function FloatingText({ position, text }) {
 function ParticleField() {
   const particlesRef = useRef()
   const particleCount = 300
-  const particleSpeed = 0.01
+  const particleSpeed = 0.02
 
   const [positions, velocities] = useMemo(() => {
     const positions = new Float32Array(particleCount * 3)
@@ -133,8 +133,8 @@ export default function TechScene() {
         </Suspense>
         <FloatingText position={[-2, -2, 0]} text="Innovate" />
         <FloatingText position={[2, -2, 0]} text="Create" />
-        <FloatingText position={[0, 1.3, 0]} text="Develop" />
-        <FloatingText position={[0, -1.2, 0]} text="Share" />
+        <FloatingText position={[0, 2.5, 0]} text="Develop" />
+        <FloatingText position={[0, 0, 0]} text="Share" />
         <ParticleField />
         <OrbitControls enableZoom={false} />
       </Canvas>
