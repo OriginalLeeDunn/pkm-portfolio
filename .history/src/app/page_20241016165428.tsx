@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Button } from '@/components/home-page/ui/button'
 import dynamic from 'next/dynamic'
 
-const TechScene = dynamic(() => import('@/components/3d/TechScene'), { ssr: false })
+const HeroScene = dynamic(() => import('@/components/3d/HeroScene'), { ssr: false })
 
 export default function Home() {
   return (
@@ -19,6 +19,14 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div>
+
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
+          {/* Add ProjectCard components here */}
+        </div>
+      </section>
     </div>
   )
 }

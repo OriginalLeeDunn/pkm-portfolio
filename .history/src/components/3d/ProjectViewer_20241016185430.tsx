@@ -3,18 +3,18 @@
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF } from '@react-three/drei'
 
-function Model({ url }: { url: string }) {
+function Model({ url }) {
   const { scene } = useGLTF(url)
   return <primitive object={scene} />
 }
 
-export default function ProjectViewer({ modelUrl }: { modelUrl: string }) {
+export default function ProjectViewer({ modelUrl }) {
   return (
     <div className="w-full h-[400px]">
       <Canvas camera={{ position: [0, 0, 5] }}>
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-        <Model url={modelUrl} />
+        <Model  url={modelUrl} />
         <OrbitControls />
       </Canvas>
     </div>

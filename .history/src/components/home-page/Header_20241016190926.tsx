@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { Button } from '@/components/home-page/ui/button'
-import { ThemeToggle } from '@/components/home-page/ThemeToggle'
+import { Button } from '@/components/ui/button'
+import { ThemeToggle } from '@/components/ThemeToggle'
 
 export default function Header() {
   return (

@@ -1,9 +1,10 @@
 'use client'
 
 import { useRef, useMemo } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { OrbitControls, Text } from '@react-three/drei'
 import * as THREE from 'three'
+import { TextureLoader } from 'three/src/loaders/TextureLoader'
 
 function Cog({ position, rotation, scale }) {
   const meshRef = useRef()
@@ -68,6 +69,7 @@ function FloatingText({ position, text }) {
 
 function ParticleField() {
   const particlesRef = useRef()
+  const particleTexture = useLoader(TextureLoader, '/textures/particle.png')
 
   const [positions, scales] = useMemo(() => {
     const positions = new Float32Array(1000 * 3)
@@ -112,6 +114,7 @@ function ParticleField() {
       </bufferGeometry>
       <pointsMaterial
         size={0.05}
+        map={particleTexture}
         transparent
         alphaTest={0.5}
         color="#5e81ac"
