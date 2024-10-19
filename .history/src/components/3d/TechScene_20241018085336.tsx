@@ -7,6 +7,21 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { ErrorBoundary } from 'react-error-boundary'
 
+declare module 'three/examples/jsm/loaders/GLTFLoader' {
+  import { Loader } from 'three';
+  import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
+
+  export class GLTFLoader extends Loader {
+    constructor();
+    load(
+      url: string,
+      onLoad: (gltf: GLTF) => void,
+      onProgress?: (event: ProgressEvent) => void,
+      onError?: (event: ErrorEvent) => void
+    ): void;
+  }
+}
+
 
 function Cog({ position, rotation, scale, speed = 0.01, color = "#88c0d0" }) {
   const meshRef = useRef()

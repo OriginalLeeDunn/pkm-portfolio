@@ -7,7 +7,6 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { ErrorBoundary } from 'react-error-boundary'
 
-
 function Cog({ position, rotation, scale, speed = 0.01, color = "#88c0d0" }) {
   const meshRef = useRef()
   const gltf = useLoader(GLTFLoader, '/models/Futuristic_Techy_COG__1017024135_refine.glb')
